@@ -1,0 +1,31 @@
+.header{
+  background-image: url('../img/main__bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  &__burger{
+    padding: 30px;
+    background-color: #000;
+    color: #ffffff;
+  }
+}
+.top-menu {
+  &__contacts {
+    background-color: #fff;
+    padding: 30px 200px 30px 45px;
+}
+  &__link{
+    font-family:'Montserrat', sans-serif;
+
+    &:last-child{
+        margin-left: 70px;
+    }
+  }
+}
+.link{
+  &__text{
+    color: #222222;
+    font-size: 11px;
+    letter-spacing:1px;
+  }
+}

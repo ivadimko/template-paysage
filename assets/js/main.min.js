@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){$(".shine").fadeOut()},$(document).ready(function(){$(".anchor").on("click",function(n){n.preventDefault();var o=this.hash,t=$(o);$("html, body").stop().animate({scrollTop:t.offset().top},500,"swing")})});

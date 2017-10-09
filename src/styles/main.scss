@@ -1,0 +1,14 @@
+/**
+
+There go additional styles that are not critical for displaying above-the-fold content
+
+ */
+
+@import 'lib/foundation';
+@import '_var';
+@import '_mixins';
+@import '_ui';
+
+.ccm-page {
+  @import 'sections/header';
+}
