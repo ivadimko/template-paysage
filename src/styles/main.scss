@@ -10,5 +10,6 @@ There go additional styles that are not critical for displaying above-the-fold c
 @import '_ui';
 
 .ccm-page {
+	@import 'components';
   @import 'sections/header';
 }

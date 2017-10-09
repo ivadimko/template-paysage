@@ -1,31 +1,72 @@
 .header{
-  background-image: url('../img/main__bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  &__burger{
-    padding: 30px;
-    background-color: #000;
-    color: #ffffff;
-  }
+	background-image: url('../img/main__bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 20px 20px 132px 165px;
+	min-height: 600px;
+	color: $white;
+	&__logo{
+		display: flex;
+		align-items: center;
+		height: 80px;
+	}
+	&__content{
+		max-width: 450px;
+	}
+	&__heading{
+		font-family: $helvetica;
+		line-height: 56px;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	&__text{
+		font-family: $montserrat;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
 }
 .top-menu {
-  &__contacts {
-    background-color: #fff;
-    padding: 30px 200px 30px 45px;
-}
-  &__link{
-    font-family:'Montserrat', sans-serif;
+	&__contacts {
+		background-color: $white;
+		height: 80px;
+		padding: 0 200px 0 30px;
+	}
+	&__link{
+		font-family: $montserrat;
+		height: 100%;
+		display: inline-flex;
+		align-items: center;
+		padding-right: 70px;
+		&:last-child{
+			padding-right: 0;
+		}
+		&:hover{
+			.link__icon{
+				fill: darken($black, 20%);
+			}
+			.link__value{
+				color: darken($black, 20%);
+				text-decoration: underline;
+			}
+		}
+	}
 
-    &:last-child{
-        margin-left: 70px;
-    }
-  }
 }
 .link{
-  &__text{
-    color: #222222;
-    font-size: 11px;
-    letter-spacing:1px;
-  }
+	&__icon{
+		fill: $black;
+		transition: fill .4s ease;
+	}
+	&__value{
+		color: $black;
+		font-size: 11px;
+		letter-spacing:1px;
+		margin-left: 20px;
+		white-space: nowrap;
+		transition: color .4s ease;
+	}
+
 }

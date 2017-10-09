@@ -1,0 +1,133 @@
+//			BUTTONS
+.button{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: $white;
+	font-size: 12px;
+	position: relative;
+	padding: 10px 35px 10px 0;
+	&::before{
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 85px;
+		top: 0;
+		right: 0;
+		background-color: #83B215;
+		transition: width .4s ease;
+	}
+	&:hover{
+		&::before{
+			width: 110%;
+		}
+		.button__arrow{
+			transform: translate(5px, -50%);
+			&+.button__arrow{
+				transform: translate(0, -50%);
+				opacity: 1;
+			}
+		}
+	}
+	&__text{
+		position: relative;
+	}
+	&__arrows{
+		position: absolute;
+		top: 0;
+		right: 7px;
+		height: 100%;
+		width: 20px;
+		overflow: hidden;
+		display: inline-block;
+	}
+	&__arrow{
+		fill: $white;
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translate(0,-50%);
+		transition: transform .4s ease,
+		opacity .2s ease;
+		&+.button__arrow{
+			transform: translate(-15px, -50%);
+			opacity: 0;
+		}
+		
+	}
+}
+
+//		BURGER MENU
+.top-menu__burger{
+	height: 80px;
+	width: 84px;
+	background-color: $black;
+	cursor: pointer;
+	&:hover{
+		span{
+			&::before{
+				width: 100%;
+			}
+			&:nth-child(1){
+				animation: button 1s ease;
+			}
+			&:nth-child(2){
+				animation: button 1s ease;
+				animation-delay: .25s;
+			}
+			&:nth-child(3){
+				animation: button-2 1s ease;
+				animation-delay: .35s;
+			}
+		}
+	}
+}
+.burger{
+	margin: auto;
+	position: relative;
+	width: 18px;
+	height: 14px;
+
+	span{
+		height: 2px;
+		background-color: #DADADA;
+		position: absolute;
+		left: 0;
+		display: block;
+		border-radius: 5px;
+		transition: all .4s ease;
+		&::before{
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 0;
+			background-color: $white;
+			transition: width .4s ease;
+		}
+
+		&:nth-child(1){
+			width: 18px;
+			top: 0;
+		}
+		&:nth-child(2){
+			top: 6px;
+			width: 18px;
+		}
+		&:nth-child(3){
+			top: 12px;
+			width: 10px;
+		}
+	}
+}
+
+@keyframes button {
+	0%   { width: 18px; }
+	50%	 { width: 10px; }
+	100% { width: 18px; }
+}
+@keyframes button-2 {
+	0%   { width: 10px; }
+	50%  { width: 18px; }
+	100% { width: 10px; }
+}
+
+

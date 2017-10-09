@@ -1056,11 +1056,11 @@ a {
 }
 .ccm-page ::-moz-selection {
   color: #fff;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page ::selection {
   color: #fff;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page.edit_mode .main-header {
   margin-top: 48px!important
@@ -1096,14 +1096,14 @@ a {
   outline: 0
 }
 .ccm-page p {
-  font: 400 16px Muli,sans-serif;
+  font: 400 16px Montserrat,sans-serif;
   line-height: 26px;
   margin: 0;
   padding: 0;
   text-align: justify
 }
 .ccm-page p a {
-  color: #c5b9ac
+  color: #fff
 }
 .ccm-page p a:hover {
   text-decoration: underline
@@ -1146,7 +1146,7 @@ a {
   margin-bottom: 40px
 }
 .ccm-page .sub-title {
-  font: 400 22px adobe-caslon-pro,serif;
+  font: 400 22px Montserrat,sans-serif;
   font-style: italic;
   line-height: 26px;
   margin-top: 10px;
@@ -1154,7 +1154,7 @@ a {
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  color: #ec1d24
+  color: red
 }
 .ccm-page .parallax-move {
   position: relative;
@@ -1222,7 +1222,7 @@ a {
   vertical-align: middle
 }
 .ccm-page .lang-switcher li a {
-  font: 700 10px Muli,sans-serif;
+  font: 700 10px Montserrat,sans-serif;
   line-height: 13px;
   transition: opacity .2s linear;
   text-decoration: none;
@@ -1240,7 +1240,7 @@ a {
 .ccm-page .btn__reservation,
 .ccm-page .btn__small,
 .ccm-page .btn__small-light {
-  font: 700 12px Muli,sans-serif;
+  font: 700 12px Montserrat,sans-serif;
   line-height: 15px;
   display: inline-block;
   margin: 0;
@@ -1254,7 +1254,7 @@ a {
 }
 .ccm-page .btn__arrow {
   padding: 17px 49px;
-  background: #4b2502
+  background: #4a4a4a
 }
 .ccm-page .btn__arrow i {
   font-size: 6px;
@@ -1264,32 +1264,32 @@ a {
   vertical-align: top
 }
 .ccm-page .btn__arrow:hover {
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page .btn__arrow:active,
 .ccm-page .btn__arrow:focus {
-  background: #1f0f00
+  background: #222
 }
 .ccm-page .btn__small {
   padding: 12px 20px;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page .btn__small:hover {
-  background: #4b2502
+  background: #4a4a4a
 }
 .ccm-page .btn__small:active,
 .ccm-page .btn__small:focus {
-  background: #1f0f00
+  background: #222
 }
 .ccm-page .btn__small-light {
   padding: 11px 19px;
-  color: #c5b9ac;
-  border: 1px solid #c5b9ac;
+  color: #fff;
+  border: 1px solid #fff;
   background: #fff
 }
 .ccm-page .btn__small-light:hover {
   color: #fff;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page .btn__small-light:active,
 .ccm-page .btn__small-light:focus {
@@ -1303,14 +1303,14 @@ a {
   transform: rotate(-90deg);
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page .btn__reservation:hover {
-  background: #4b2502
+  background: #4a4a4a
 }
 .ccm-page .btn__reservation:active,
 .ccm-page .btn__reservation:focus {
-  background: #1f0f00
+  background: #222
 }
 .ccm-page .fixed-social {
   margin: 0;
@@ -1365,7 +1365,7 @@ a {
   text-align: center
 }
 .ccm-page .btn-cover a {
-  font: 700 15px Muli,sans-serif;
+  font: 700 15px Montserrat,sans-serif;
   line-height: 26px;
   display: inline-block;
   padding: 10px 40px;
@@ -1377,8 +1377,8 @@ a {
 }
 .ccm-page .btn-cover a:hover {
   color: #fff;
-  border-color: #c5b9ac;
-  background: #c5b9ac
+  border-color: #fff;
+  background: #fff
 }
 .ccm-page .btn-cover a:active,
 .ccm-page .btn-cover a:focus {
@@ -1390,7 +1390,7 @@ a {
   display: inline-block;
   margin-right: 22px;
   transition: all .2s linear;
-  color: #c5b9ac
+  color: #fff
 }
 .ccm-page .social-wrap a:active,
 .ccm-page .social-wrap a:focus,
@@ -1408,7 +1408,7 @@ a {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: #c5b9ac
+  background: #fff
 }
 .ccm-page .arrow-top:hover i {
   -webkit-transform: translateY(-3px);
@@ -1422,13 +1422,13 @@ a {
   transition: transform .2s linear
 }
 .ccm-page .right-red {
-  font: 400 10px Muli,sans-serif;
+  font: 400 10px Montserrat,sans-serif;
   line-height: 16px;
   text-align: right;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #ec1d24
+  color: red
 }
 .ccm-page .half-bg {
   position: absolute;
@@ -1448,29 +1448,236 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards
 }
+.ccm-page .button {
+  font-family: Montserrat,sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  padding: 10px 35px 10px 0;
+  color: #fff
+}
+.ccm-page .button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85px;
+  height: 100%;
+  content: '';
+  transition: width .4s ease;
+  background-color: #83b215
+}
+.ccm-page .button:hover::before {
+  width: 110%
+}
+.ccm-page .button:hover .button__arrow {
+  -webkit-transform: translate(5px,-50%);
+  transform: translate(5px,-50%)
+}
+.ccm-page .button:hover .button__arrow + .button__arrow {
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  opacity: 1
+}
+.ccm-page .button__text {
+  position: relative
+}
+.ccm-page .button__arrows {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  display: inline-block;
+  overflow: hidden;
+  width: 20px;
+  height: 100%
+}
+.ccm-page .button__arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transition: -webkit-transform .4s ease, opacity .2s ease;
+  transition: transform .4s ease, opacity .2s ease;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  fill: #fff
+}
+.ccm-page .button__arrow + .button__arrow {
+  -webkit-transform: translate(-15px,-50%);
+  transform: translate(-15px,-50%);
+  opacity: 0
+}
+.ccm-page .top-menu__burger {
+  width: 84px;
+  height: 80px;
+  cursor: pointer;
+  background-color: #222
+}
+.ccm-page .top-menu__burger:hover span::before {
+  width: 100%
+}
+.ccm-page .top-menu__burger:hover span:nth-child(1) {
+  -webkit-animation: button 1s ease;
+  animation: button 1s ease
+}
+.ccm-page .top-menu__burger:hover span:nth-child(2) {
+  -webkit-animation: button 1s ease;
+  animation: button 1s ease;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s
+}
+.ccm-page .top-menu__burger:hover span:nth-child(3) {
+  -webkit-animation: button-2 1s ease;
+  animation: button-2 1s ease;
+  -webkit-animation-delay: .35s;
+  animation-delay: .35s
+}
+.ccm-page .burger {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  margin: auto
+}
+.ccm-page .burger span {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 2px;
+  transition: all .4s ease;
+  border-radius: 5px;
+  background-color: #dadada
+}
+.ccm-page .burger span::before {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  content: '';
+  transition: width .4s ease;
+  background-color: #fff
+}
+.ccm-page .burger span:nth-child(1) {
+  top: 0;
+  width: 18px
+}
+.ccm-page .burger span:nth-child(2) {
+  top: 6px;
+  width: 18px
+}
+.ccm-page .burger span:nth-child(3) {
+  top: 12px;
+  width: 10px
+}
+@-webkit-keyframes button {
+  0% {
+    width: 18px
+  }
+  50% {
+    width: 10px
+  }
+  100% {
+    width: 18px
+  }
+}
+@keyframes button {
+  0% {
+    width: 18px
+  }
+  50% {
+    width: 10px
+  }
+  100% {
+    width: 18px
+  }
+}
+@-webkit-keyframes button-2 {
+  0% {
+    width: 10px
+  }
+  50% {
+    width: 18px
+  }
+  100% {
+    width: 10px
+  }
+}
+@keyframes button-2 {
+  0% {
+    width: 10px
+  }
+  50% {
+    width: 18px
+  }
+  100% {
+    width: 10px
+  }
+}
 .ccm-page .header {
+  min-height: 600px;
+  padding: 20px 20px 132px 165px;
+  color: #fff;
   background-image: url(../img/main__bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover
 }
-.ccm-page .header__burger {
-  padding: 30px;
-  color: #fff;
-  background-color: #000
+.ccm-page .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ccm-page .header__content {
+  max-width: 450px
+}
+.ccm-page .header__heading {
+  font-family: helvetica,sans-serif;
+  font-size: 36px;
+  line-height: 56px;
+  margin-bottom: 20px
+}
+.ccm-page .header__text {
+  font-family: Montserrat,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 30px
 }
 .ccm-page .top-menu__contacts {
-  padding: 30px 200px 30px 45px;
+  height: 80px;
+  padding: 0 200px 0 30px;
   background-color: #fff
 }
 .ccm-page .top-menu__link {
-  font-family: Montserrat,sans-serif
+  font-family: Montserrat,sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  padding-right: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .ccm-page .top-menu__link:last-child {
-  margin-left: 70px
+  padding-right: 0
 }
-.ccm-page .link__text {
+.ccm-page .top-menu__link:hover .link__icon {
+  fill: #000
+}
+.ccm-page .top-menu__link:hover .link__value {
+  text-decoration: underline;
+  color: #000
+}
+.ccm-page .link__icon {
+  transition: fill .4s ease;
+  fill: #222
+}
+.ccm-page .link__value {
   font-size: 11px;
+  margin-left: 20px;
+  transition: color .4s ease;
+  white-space: nowrap;
   letter-spacing: 1px;
   color: #222
 }
@@ -2810,7 +3017,7 @@ screen and (min-width:64em) {
 }
 @media (max-width:768px) {
   .ccm-page p {
-    font: 400 14px Muli,sans-serif;
+    font: 400 14px Montserrat,sans-serif;
     line-height: 24px
   }
   .ccm-page h2,
