@@ -2,6 +2,11 @@
 window.onload = function () {
 
         $('.shine').fadeOut();
+        $('.gallery').slick({
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            arrows: false,
+        });
 
 };
 

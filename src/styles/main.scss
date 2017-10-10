@@ -11,5 +11,7 @@ There go additional styles that are not critical for displaying above-the-fold c
 
 .ccm-page {
 	@import 'components';
-  @import 'sections/header';
+    @import 'sections/header';
+    @import 'sections/sections';
+    @import 'sections/footer';
 }

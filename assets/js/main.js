@@ -1,1 +1,1 @@
-"use strict";window.onload=function(){$(".shine").fadeOut()},$(document).ready(function(){$(".anchor").on("click",function(n){n.preventDefault();var o=this.hash,t=$(o);$("html, body").stop().animate({scrollTop:t.offset().top},500,"swing")})});
+"use strict";window.onload=function(){$(".shine").fadeOut(),$(".gallery").slick({slidesToShow:4,slidesToScroll:2,arrows:!1})},$(document).ready(function(){$(".anchor").on("click",function(o){o.preventDefault();var n=this.hash,s=$(n);$("html, body").stop().animate({scrollTop:s.offset().top},500,"swing")})});

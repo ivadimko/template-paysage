@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="13px" viewBox="0 0 22 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HP-09-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HP-5-09" transform="translate(-1064.000000, -3741.000000)" stroke="#9EC73D">
+            <g id="section-/-News" transform="translate(260.000000, 3482.000000)">
+                <g id="c-/-News-Item" transform="translate(64.000000, 191.000000)">
+                    <g id="Arrow-Right" transform="translate(740.000000, 68.000000)">
+                        <path d="M0.987989136,6.00340833 L20.9879891,6.00340833" id="Path-2" transform="translate(10.987989, 6.003408) scale(-1, 1) translate(-10.987989, -6.003408) "></path>
+                        <polyline id="Path-3" transform="translate(17.992915, 6.011047) scale(-1, 1) rotate(-180.000000) translate(-17.992915, -6.011047) " points="14.9929153 12.0110465 20.9929153 6.00792932 14.9991464 0.0110465226"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

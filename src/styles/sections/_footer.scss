@@ -1,0 +1,59 @@
+.footer{
+  background-color: $footerBg;
+  padding: 50px 165px 0 165px;
+  font-size: 10px;
+  color: $white;
+  &__col{
+    padding-left:180px;
+  }
+  &__link{
+    display: block;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: inherit;
+    white-space: nowrap;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__contacts{
+    p,a{
+      font-weight: 500;
+      font-size: inherit;
+      line-height: 25px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      color: inherit;
+    }
+    p:last-of-type{
+        margin-bottom: 20px;
+      }
+    a{
+      display: block;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__bottom-line{
+    margin-top: 35px;
+    padding: 30px 0 55px;
+    width: 100%;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: rgba(#F2F4F6, .1);
+    }
+    p{
+      font-size: inherit;
+    }
+  }
+}

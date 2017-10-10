@@ -1,4 +1,4 @@
-const WebFont = //import('webfontloader');
+const WebFont = // import('webfontloader');
 
 WebFont.load({
 	google: {

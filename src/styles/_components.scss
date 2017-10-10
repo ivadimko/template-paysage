@@ -1,11 +1,24 @@
 //			BUTTONS
 .button{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
 	color: $white;
 	font-size: 12px;
 	position: relative;
 	padding: 10px 35px 10px 0;
+	&--grey{
+		color: $darkText;
+		.button__arrow{
+			fill: $darkText;
+		}
+		&.button{
+			&::before{
+				background-color: #F2F4F6;
+			}
+		}
+	}
+	&--news{
+		padding: 60px 0 0 30px;
+	}
 	&::before{
 		position: absolute;
 		content: '';
@@ -30,6 +43,7 @@
 	}
 	&__text{
 		position: relative;
+		font-weight: 600;
 	}
 	&__arrows{
 		position: absolute;
@@ -130,4 +144,156 @@
 	100% { width: 10px; }
 }
 
+.gallery{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -215px 0 95px;
+	&__title{
+		font-family: $prata;
+		padding: 15px 0 0 30px;
+		font-size: 26px;
+		color: $black;
+		margin: 0;
+	}
+	&__img{
+		max-height: 350px;
+		height: auto;
+		width: 100%;
+		max-width: 350px;
+		overflow: hidden;
+		transition: transform .4s ease;
+		will-change: transform;
+		cursor: pointer;
+		img{
+			min-height: 100%;
+			min-width: 100%;
+			object-fit: cover;
+			transition: transform .4s ease;
+			will-change: transform;
+		}
+		&:hover{
+			transform: scale(0.95, 0.95);
+			img{
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+}
+.slick-slide{
+	margin-right: 30px;
+}
 
+.news{
+	width: 100%;
+	&__arrow{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+		fill: none;
+		stroke: rgba(#9EC73D, 0);
+		transition: stroke .4s ease;
+
+	}
+	&__item{
+		padding: 30px;
+		position: relative;
+		&:hover{
+			background-color: #FBFBFC;
+			&::after{
+				width: 0;
+			}
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			width: calc(100% - 60px);
+			height: 1px;
+			left: 30px;
+			bottom: 0;
+			background-color: #F2F4F6;
+		}
+	}
+	&__date{
+		display: block;
+		padding-bottom: 10px;
+		font-family: $montserrat;
+		font-weight: 500;
+		color: $black;
+		font-size: 11px;
+	}
+	&__link{
+		display: block;
+		color: $darkText;
+		font-size: 18px;
+		font-family: $montserrat;
+		line-height: 40px;
+		position: relative;
+		span{
+			opacity: 1;
+			transition: opacity .6s ease;
+		}
+		&::before{
+			position: absolute;
+			content: attr(data-value);
+			color: #9EC73D;
+			width: 0;
+			overflow-x: hidden;
+			transition: width .6s ease;
+			white-space: nowrap;
+			font-size: 18px;
+		}
+		&:hover{
+			span {
+				opacity: 0;
+			}
+			&::before{
+				width: 100%;
+			}
+			.news__arrow{
+				stroke: #9EC73D;
+				transition-delay: .2s;
+			}
+		}
+	}
+}
+.social{
+	margin-top: 30px;
+	&__icon{
+		font-size: 0;
+		fill: $white;
+		svg{
+			border-radius: 50%;
+			background-color: rgba(#F2F4F6, .1);
+			margin-right: 20px;
+			transition: background-color .4s ease;
+		}
+		&:hover{
+			svg{
+				background-color: rgba(#F2F4F6, .4);
+			}
+		}
+
+	}
+}
+.scroll-button{
+	cursor: pointer;
+	svg{
+		stroke: rgba($white, .4);
+		stroke-width: 2px;
+		fill: none;
+		background-color: rgba($white, .04);
+		border-radius: 50%;
+		transition: stroke .4s ease,
+					background-color .4s ease;
+	}
+	&:hover{
+		svg{
+			stroke: rgba($white, .8);
+			background-color: rgba($white, .3);
+		}
+	}
+}
+.leaf{
+	position: absolute;
+}
