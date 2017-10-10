@@ -1055,12 +1055,12 @@ a {
   -webkit-font-smoothing: antialiased
 }
 .ccm-page ::-moz-selection {
-  color: #fff;
-  background: #fff
+  color: #4a4a4a;
+  background: rgba(158,199,61,.7)
 }
 .ccm-page ::selection {
-  color: #fff;
-  background: #fff
+  color: #4a4a4a;
+  background: rgba(158,199,61,.7)
 }
 .ccm-page.edit_mode .main-header {
   margin-top: 48px!important
@@ -1069,7 +1069,7 @@ a {
   margin-top: 48px!important
 }
 .ccm-page .max-height,
-.ccm-page .max-height > .row {
+.ccm-page .max-height > .grid-x {
   position: relative;
   height: 100%
 }
@@ -1205,6 +1205,19 @@ a {
 }
 .ccm-page [class*=kAnimation] {
   transition: all .5s ease-out!important
+}
+.ccm-page .group-block {
+  display: grid;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  grid-template-columns: 1fr
+}
+.ccm-page .narrow-block,
+.ccm-page .wide-block {
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1
 }
 .ccm-page .padding-top {
   padding-top: 30px
@@ -1448,6 +1461,11 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards
 }
+#scroll-top {
+  position: absolute;
+  top: 0;
+  left: 0
+}
 .ccm-page .button {
   font-family: Montserrat,sans-serif;
   font-size: 12px;
@@ -1625,7 +1643,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -215px 0 95px;
+  margin-right: -215px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between
@@ -1714,30 +1732,13 @@ a {
   line-height: 40px;
   position: relative;
   display: block;
+  transition: color .4s ease;
   color: #4a4a4a
 }
-.ccm-page .news__link span {
-  transition: opacity .6s ease;
-  opacity: 1
-}
-.ccm-page .news__link::before {
-  font-size: 18px;
-  position: absolute;
-  overflow-x: hidden;
-  width: 0;
-  content: attr(data-value);
-  transition: width .6s ease;
-  white-space: nowrap;
+.ccm-page .news__link:hover {
   color: #9ec73d
 }
-.ccm-page .news__link:hover span {
-  opacity: 0
-}
-.ccm-page .news__link:hover::before {
-  width: 100%
-}
 .ccm-page .news__link:hover .news__arrow {
-  transition-delay: .2s;
   stroke: #9ec73d
 }
 .ccm-page .social {
@@ -1775,13 +1776,13 @@ a {
   position: absolute
 }
 .ccm-page .header {
-  min-height: 600px;
-  padding: 20px 20px 132px 165px;
-  color: #fff;
-  background-image: url(../img/main__bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 15px;
+  background: 0 0
 }
 .ccm-page .header__logo {
   display: -webkit-box;
@@ -1792,21 +1793,13 @@ a {
   -ms-flex-align: center;
   align-items: center
 }
-.ccm-page .header__content {
-  max-width: 450px
+.ccm-page .header__top-line {
+  position: relative
 }
-.ccm-page .header__heading {
-  font-family: helvetica,sans-serif;
-  font-size: 36px;
-  line-height: 56px;
-  margin-bottom: 20px
-}
-.ccm-page .header__text {
-  font-family: Montserrat,sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 28px;
-  margin-bottom: 30px
+.ccm-page .header__top-menu {
+  position: absolute;
+  top: 0;
+  right: 15px
 }
 .ccm-page .top-menu__contacts {
   height: 80px;
@@ -1849,9 +1842,25 @@ a {
 .ccm-page .section {
   position: relative
 }
+.ccm-page .section__cover {
+  height: 100vh;
+  min-height: 600px;
+  padding-bottom: 130px;
+  color: #fff;
+  background: url(../img/main__bg.jpg) center center no-repeat;
+  background-size: cover
+}
 .ccm-page .section__services {
-  margin: 100px 0 0 70px;
-  padding-bottom: 70px;
+  margin-top: 100px;
+  padding-bottom: 70px
+}
+.ccm-page .section__services::before {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 100%;
+  height: 100%;
+  content: '';
   background-color: #fbfbfc
 }
 .ccm-page .section__realisations {
@@ -1861,19 +1870,21 @@ a {
   margin-top: 70px;
   padding-bottom: 110px
 }
-.ccm-page .section p {
+.ccm-page .section__text {
   font-family: Montserrat,sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
-  max-width: 390px;
-  padding: 30px 0 40px 40px;
+  padding: 30px 65px 40px 40px;
   color: #4a4a4a
 }
 .ccm-page .section__about {
   margin-top: 70px
 }
 .ccm-page .section__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 800px;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 640px;
@@ -1882,6 +1893,9 @@ a {
 .ccm-page .section__img img {
   min-width: 100%;
   min-height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -o-object-fit: cover;
   object-fit: cover
 }
@@ -1915,17 +1929,11 @@ a {
   color: #9ec73d
 }
 .ccm-page .section__content {
-  padding: 150px 315px 0 95px
+  margin-top: 150px
 }
 .ccm-page .section__content--top {
   position: relative;
-  top: -31px;
-  padding-top: 0;
-  padding-left: 190px
-}
-.ccm-page .section__content--left {
-  padding-right: 0;
-  padding-left: 260px
+  top: -31px
 }
 .ccm-page .section__content--full {
   padding: 0
@@ -1933,14 +1941,29 @@ a {
 .ccm-page .section__content--full .section__heading {
   margin-left: 260px
 }
+.ccm-page .main-heading {
+  font-family: helvetica,sans-serif;
+  font-size: 36px;
+  line-height: 56px;
+  margin: 0;
+  margin-bottom: 20px
+}
+.ccm-page .main-subheading {
+  font-family: Montserrat,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: #fff
+}
+.ccm-page .no-margin {
+  margin: 0
+}
 .ccm-page .footer {
   font-size: 10px;
   padding: 50px 165px 0 165px;
   color: #fff;
   background-color: #161616
-}
-.ccm-page .footer__col {
-  padding-left: 180px
 }
 .ccm-page .footer__link {
   font-family: Montserrat,sans-serif;

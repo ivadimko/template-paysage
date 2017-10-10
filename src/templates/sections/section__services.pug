@@ -1,15 +1,21 @@
 include ../layouts/mixins.pug
 section.section.section__services
-    .section__content.section__content--top
-        h2.section__heading.section__heading--green
-            p Dimension
-            p paysage
-            span services
-        p Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet
-    .gallery
-        +gallery__item('gallery-1.jpg', 'Water')
-        +gallery__item('gallery-2.jpg', 'Light')
-        +gallery__item('gallery-3.jpg', 'Maintenance')
-        +gallery__item('gallery-4.jpg', 'Urban Property')
-        +gallery__item('gallery-2.jpg', 'Light')
-        +gallery__item('gallery-1.jpg', 'Water')
+    .grid-container
+        .grid-x
+            .small-5.small-offset-1
+                .section__content.section__content--top.no-margin
+                    h2.section__heading.section__heading--green
+                        p Dimension
+                        p paysage
+                        span services
+                    p.section__text Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet
+    .grid-container
+        .grid-x
+            .cell
+                .gallery
+                    +gallery__item('gallery-1.jpg', 'Water')
+                    +gallery__item('gallery-2.jpg', 'Light')
+                    +gallery__item('gallery-3.jpg', 'Maintenance')
+                    +gallery__item('gallery-4.jpg', 'Urban Property')
+                    +gallery__item('gallery-2.jpg', 'Light')
+                    +gallery__item('gallery-1.jpg', 'Water')

@@ -147,7 +147,7 @@
 .gallery{
 	display: flex;
 	justify-content: space-between;
-	margin: 0 -215px 0 95px;
+	margin-right: -215px;
 	&__title{
 		font-family: $prata;
 		padding: 15px 0 0 30px;
@@ -196,6 +196,7 @@
 
 	}
 	&__item{
+
 		padding: 30px;
 		position: relative;
 		&:hover{
@@ -229,30 +230,11 @@
 		font-family: $montserrat;
 		line-height: 40px;
 		position: relative;
-		span{
-			opacity: 1;
-			transition: opacity .6s ease;
-		}
-		&::before{
-			position: absolute;
-			content: attr(data-value);
-			color: #9EC73D;
-			width: 0;
-			overflow-x: hidden;
-			transition: width .6s ease;
-			white-space: nowrap;
-			font-size: 18px;
-		}
+		transition: color .4s ease;
 		&:hover{
-			span {
-				opacity: 0;
-			}
-			&::before{
-				width: 100%;
-			}
+			color: #9EC73D;
 			.news__arrow{
 				stroke: #9EC73D;
-				transition-delay: .2s;
 			}
 		}
 	}

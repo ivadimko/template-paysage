@@ -53,8 +53,8 @@ a {
     line-height: normal;
     font-weight: 400;
     &::selection {
-      background: $white;
-      color: #fff;
+      background: rgba(#9ec73d, 0.7);
+      color: #4a4a4a;
     }
   }
 
@@ -68,7 +68,7 @@ a {
   }
 
   .max-height {
-    &, & > .row {
+    &, & > .grid-x {
       height: 100%;
       position: relative;
     }
@@ -252,12 +252,20 @@ a {
   *[class*="kAnimation"] {
     transition: all 500ms ease-out !important;
   }
-  
-  //@for $i from 1 through 3 {
-  //  .kAnimation#{$i} {
-  //	 transition: transform 0.3s ease-out;
-  //  }
-  //}
+
+  .group-block {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wide-block, .narrow-block {
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+  }
 
   // Ui elements style start
 
@@ -367,7 +375,7 @@ a {
       }
     }
   }
-  
+
   .fixed-social {
     padding: 0;
     margin: 0;
@@ -387,34 +395,34 @@ a {
           color: #fff;
           font-size: 12px;
           text-align: center;
-          line-height:40px;
-          transition:all 200ms linear;
+          line-height: 40px;
+          transition: all 200ms linear;
         }
 
         i {
-          &[class*='Facebook']{
+          &[class*='Facebook'] {
             background: #4460A0;
           }
-          &[class*='Google']{
+          &[class*='Google'] {
             background: #E24733;
           }
-          &[class*='Tripadvisor']{
+          &[class*='Tripadvisor'] {
             background: #00af87;
           }
-          &[class*='Instagram']{
+          &[class*='Instagram'] {
             font-size: 14px;
             background: #ffd700;
             background: -moz-linear-gradient(25deg, #ffd700 0%, #fc4a00 33%, #d7005f 66%, #bb00b6 100%);
-            background: -webkit-linear-gradient(25deg, #ffd700 0%,#fc4a00 33%,#d7005f 66%,#bb00b6 100%);
-            background: linear-gradient(25deg, #ffd700 0%,#fc4a00 33%,#d7005f 66%,#bb00b6 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd700', endColorstr='#bb00b6',GradientType=1 );
+            background: -webkit-linear-gradient(25deg, #ffd700 0%, #fc4a00 33%, #d7005f 66%, #bb00b6 100%);
+            background: linear-gradient(25deg, #ffd700 0%, #fc4a00 33%, #d7005f 66%, #bb00b6 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd700', endColorstr='#bb00b6', GradientType=1);
             &:hover {
               color: #4B2502;
               background: #E0D9CC;
               background: -moz-linear-gradient(25deg, #E0D9CC 0%, #E0D9CC 33%, #E0D9CC 66%, #E0D9CC 100%);
-              background: -webkit-linear-gradient(25deg, #E0D9CC 0%,#E0D9CC 33%,#E0D9CC 66%,#E0D9CC 100%);
-              background: linear-gradient(25deg, #E0D9CC 0%,#E0D9CC 33%,#E0D9CC 66%,#E0D9CC 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E0D9CC', endColorstr='#E0D9CC',GradientType=1 );
+              background: -webkit-linear-gradient(25deg, #E0D9CC 0%, #E0D9CC 33%, #E0D9CC 66%, #E0D9CC 100%);
+              background: linear-gradient(25deg, #E0D9CC 0%, #E0D9CC 33%, #E0D9CC 66%, #E0D9CC 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E0D9CC', endColorstr='#E0D9CC', GradientType=1);
             }
           }
 
@@ -532,6 +540,11 @@ a {
 
   // Ui elements style end
 
+}
+#scroll-top{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Class for concrete 5 */

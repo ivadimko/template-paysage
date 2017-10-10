@@ -1,46 +1,64 @@
-.section{
+.section {
   position: relative;
-  &__services{
-    background-color: #FBFBFC;
-    margin: 100px 0 0 70px;
-    padding-bottom: 70px;
+  &__cover {
+    background: url('../img/main__bg.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    color: $white;
+    height: 100vh;
+    padding-bottom: 130px;
   }
-  &__realisations{
+  &__services {
+    margin-top: 100px;
+    padding-bottom: 70px;
+    &::before{
+      position: absolute;
+      content: '';
+      background-color: #FBFBFC;
+      height: 100%;
+      width: 100%;
+      left: 70px;
+      top: 0;
+    }
+  }
+  &__realisations {
     margin-top: 100px;
   }
-  &__news{
+  &__news {
     margin-top: 70px;
     padding-bottom: 110px;
   }
-  p{
+
+  &__text {
     font-family: $montserrat;
     font-weight: 300;
     color: $darkText;
     font-size: 14px;
     line-height: 28px;
-    padding: 30px 0 40px 40px;
-    max-width: 390px;
+    padding: 30px 65px 40px 40px;
   }
-  &__about{
+  &__about {
     margin-top: 70px;
   }
-  &__img{
+  &__img {
     flex: 0 1 640px;
+    display: flex;
     height: 800px;
-    img{
-      min-height:100%;
-      min-width:100%;
+    img {
+      flex: 1 1 auto;
+      min-height: 100%;
+      min-width: 100%;
       object-fit: cover;
     }
   }
-  &__heading{
+  &__heading {
     font-family: $prata;
     font-size: 32px;
     color: $black;
     text-transform: capitalize;
     position: relative;
     padding-bottom: 30px;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       height: 10px;
@@ -49,39 +67,61 @@
       bottom: 0;
       background-color: #F2F4F6;
     }
-    &--green{
-      &::after{
+
+    &--green {
+      &::after {
         background-color: #9EC73D;
       }
     }
-    p{
+    p {
       padding: 0;
       font-size: inherit;
       line-height: inherit;
-      font-family:inherit;
+      font-family: inherit;
     }
-    span{
+    span {
       color: #9EC73D;
     }
   }
 
-  &__content{
-    padding: 150px 315px 0 95px;
-    &--top{
+  &__content {
+    margin-top: 150px;
+    &--top {
       position: relative;
       top: -31px;
-      padding-top: 0;
-      padding-left: 190px;
-          }
-    &--left{
-      padding-left: 260px;
-      padding-right: 0;
     }
-    &--full{
+    &--left {
+      //padding-left: 260px;
+      //padding-right: 0;
+    }
+    &--full {
       padding: 0;
-      .section__heading{
+      .section__heading {
         margin-left: 260px;
       }
     }
+  }
+}
+
+.main {
+  &-heading {
+    font-family: $helvetica;
+    line-height: 56px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin: 0;
+  }
+  &-subheading {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: $white;
+  }
+}
+.no{
+  &-margin{
+    margin: 0;
   }
 }

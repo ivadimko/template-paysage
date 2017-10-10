@@ -1,31 +1,23 @@
 .header{
-	background-image: url('../img/main__bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	padding: 20px 20px 132px 165px;
-	min-height: 600px;
-	color: $white;
-	&__logo{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	padding-top: 15px;
+	background: transparent;
+	&__logo {
 		display: flex;
 		align-items: center;
 		height: 80px;
 	}
-	&__content{
-		max-width: 450px;
+	&__top-line{
+		position: relative;
 	}
-	&__heading{
-		font-family: $helvetica;
-		line-height: 56px;
-		font-size: 36px;
-		margin-bottom: 20px;
-	}
-	&__text{
-		font-family: $montserrat;
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 28px;
-		margin-bottom: 30px;
+	&__top-menu{
+		position: absolute;
+		top: 0;
+		right: 15px;
 	}
 }
 .top-menu {

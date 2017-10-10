@@ -48,10 +48,9 @@ mixin gallery__item (image, title)
         h4.gallery__title= title
 
 mixin news__item (dateInner, dateOuter, title)
-    .news__item.small-6.small-offset-3
+    .news__item.small-8.small-offset-2
         time(datetime= dateInner).news__date= dateOuter
-        a(href='#' data-value= title).news__link
-            span= title
+        a(href='#' data-value= title).news__link= title
             svg(
                 width="22"
                 height="13"

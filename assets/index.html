@@ -85,169 +85,242 @@
   </head>
   <body id="top">
     <div class="ccm-page">
-      <header class="header grid-y grid-frame align-justify" id="header">
-        <div class="header__top-line grid-x align-justify"><a class="header__logo" href="#"><img src="../img/logo.svg"></a>
-          <div class="header__top-menu grid-x">
-            <div class="top-menu__contacts"><a class="top-menu__link" href="tel:+410217811293">
-                <svg class="link__icon" width="13" height="18" viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.96 16.962l1.708-.99a.99.99 0 0 0 .362-1.35l-2.15-2.746c-.373-.431-.875-.634-1.346-.36l-1.046.605A24.076 24.076 0 0 1 5.53 9.264C4.847 8.077 4.277 6.808 3.83 5.685l1.01-.585c.472-.273.549-.81.362-1.35L3.907.508c-.19-.536-.874-.634-1.346-.36l-1.708.99c-.944.546-.965 1.58-.723 2.7 0 0 .87 3.426 2.73 6.66 1.75 3.04 4.408 5.742 4.408 5.742.957.672 1.749 1.268 2.692.722z"></path>
-                </svg><span class="link__value">+41 (0)21 781 12 93</span></a><a class="top-menu__link" href="mailto:info@dimensions-paysage.ch">
-                <svg class="link__icon" width="19px" height="18px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.17979003,5.99867987 L1,0.179537954 C1.21751969,0.0633663366 1.46850394,0 1.73622047,0 L17.2637795,0 C17.5314961,0 17.7824803,0.0633663366 18,0.179537954 L11.82021,5.99867987 L11.0839895,6.69042904 L9.83464567,7.8679868 C9.71751969,7.97887789 9.57250656,8 9.5,8 C9.42749344,8 9.28805774,7.98415842 9.16535433,7.8679868 L7.17979003,5.99867987 Z M6,7.02762431 L0.14529148,13 C0.0538116592,12.8066298 0,12.5856354 0,12.3535912 L0,1.51381215 C0,1.33149171 0.0322869955,1.16022099 0.0914798206,1 L6,7.02762431 Z M11.8557628,8 L18,13.8747731 C17.8131246,13.9564428 17.6035976,14 17.3827448,14 L1.61725516,14 C1.3964024,14 1.18687542,13.9564428 1,13.8747731 L7.14423718,8 L8.41838774,9.21415608 C8.71852099,9.49727768 9.10926049,9.64428312 9.5,9.64428312 C9.89073951,9.64428312 10.281479,9.50272232 10.5816123,9.21415608 L11.8557628,8 Z M19,1.51909802 L19,12.3538886 C19,12.585826 18.94614,12.8067188 18.8545781,13 L13,7.03037276 L18.9138241,1 C18.967684,1.16566958 19,1.33686148 19,1.51909802 Z" id="Icon-/-Mail"></path>
-                </svg><span class="link__value">info@dimensions-paysage.ch</span></a></div>
-            <div class="top-menu__burger flex-container">
-              <div class="burger"><span></span><span></span><span></span></div>
+      <header class="header">
+        <div class="header__top-line">
+          <div class="grid-container"><a class="header__logo" href="#"><img src="../img/logo.svg"></a>
+            <div class="header__top-menu grid-x">
+              <div class="top-menu__contacts"><a class="top-menu__link" href="tel:+410217811293">
+                  <svg class="link__icon" width="13" height="18" viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.96 16.962l1.708-.99a.99.99 0 0 0 .362-1.35l-2.15-2.746c-.373-.431-.875-.634-1.346-.36l-1.046.605A24.076 24.076 0 0 1 5.53 9.264C4.847 8.077 4.277 6.808 3.83 5.685l1.01-.585c.472-.273.549-.81.362-1.35L3.907.508c-.19-.536-.874-.634-1.346-.36l-1.708.99c-.944.546-.965 1.58-.723 2.7 0 0 .87 3.426 2.73 6.66 1.75 3.04 4.408 5.742 4.408 5.742.957.672 1.749 1.268 2.692.722z"></path>
+                  </svg><span class="link__value">+41 (0)21 781 12 93</span></a><a class="top-menu__link" href="mailto:info@dimensions-paysage.ch">
+                  <svg class="link__icon" width="19px" height="18px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.17979003,5.99867987 L1,0.179537954 C1.21751969,0.0633663366 1.46850394,0 1.73622047,0 L17.2637795,0 C17.5314961,0 17.7824803,0.0633663366 18,0.179537954 L11.82021,5.99867987 L11.0839895,6.69042904 L9.83464567,7.8679868 C9.71751969,7.97887789 9.57250656,8 9.5,8 C9.42749344,8 9.28805774,7.98415842 9.16535433,7.8679868 L7.17979003,5.99867987 Z M6,7.02762431 L0.14529148,13 C0.0538116592,12.8066298 0,12.5856354 0,12.3535912 L0,1.51381215 C0,1.33149171 0.0322869955,1.16022099 0.0914798206,1 L6,7.02762431 Z M11.8557628,8 L18,13.8747731 C17.8131246,13.9564428 17.6035976,14 17.3827448,14 L1.61725516,14 C1.3964024,14 1.18687542,13.9564428 1,13.8747731 L7.14423718,8 L8.41838774,9.21415608 C8.71852099,9.49727768 9.10926049,9.64428312 9.5,9.64428312 C9.89073951,9.64428312 10.281479,9.50272232 10.5816123,9.21415608 L11.8557628,8 Z M19,1.51909802 L19,12.3538886 C19,12.585826 18.94614,12.8067188 18.8545781,13 L13,7.03037276 L18.9138241,1 C18.967684,1.16566958 19,1.33686148 19,1.51909802 Z" id="Icon-/-Mail"></path>
+                  </svg><span class="link__value">info@dimensions-paysage.ch</span></a></div>
+              <div class="top-menu__burger flex-container">
+                <div class="burger"><span></span><span></span><span></span></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="header__content">
-          <h1 class="header__heading">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
-          <p class="header__text">Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet</p><a class="button" href="#"><span class="button__text">Read More</span><span class="button__arrows">
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg>
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg></span></a>
-        </div>
       </header>
-      <section class="section section__about grid-x">
-        <div class="section__img small-6 cell"><img src="../img/section/section__about.jpg"></div>
-        <div class="section__content small-6 cell">
-          <h2 class="section__heading">
-            <p>About</p>
-            <p>dimensions</p><span>paysage</span>
-          </h2>
-          <p>Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet, eu lacinia ex finibus. Suspendisse augue est, fermentum pharetra dictum eget, gravida sed nisi.</p><a class="button button--grey" href="#"><span class="button__text">Read More</span><span class="button__arrows">
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg>
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg></span></a>
+      <section class="section section__cover"><span id="scroll-top"></span>
+        <div class="grid-container max-height">
+          <div class="grid-x align-bottom">
+            <div class="small-5">
+              <h1 class="main-heading">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+              <p class="main-subheading">Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet</p><a class="button" href="#"><span class="button__text">Read More</span><span class="button__arrows">
+                        <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                        </svg>
+                        <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                        </svg></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__about">
+        <div class="group-block">
+          <div class="wide-block">
+            <div class="grid-container full">
+              <div class="grid-x">
+                <div class="small-5 cell">
+                  <div class="section__img"><img src="../img/section/section__about.jpg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="narrow-block">
+            <div class="grid-container">
+              <div class="grid-x">
+                <div class="small-5 small-offset-6 cell">
+                  <div class="section__content section__content--left">
+                    <h2 class="section__heading">
+                      <p>About</p>
+                      <p>dimensions</p><span>paysage</span>
+                    </h2>
+                    <p class="section__text">Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet, eu lacinia ex finibus. Suspendisse augue est, fermentum pharetra dictum eget, gravida sed nisi.</p><a class="button button--grey" href="#"><span class="button__text">Read More</span><span class="button__arrows">
+                              <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                              </svg>
+                              <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                              </svg></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section section__services">
-        <div class="section__content section__content--top">
-          <h2 class="section__heading section__heading--green">
-            <p>Dimension</p>
-            <p>paysage</p><span>services</span>
-          </h2>
-          <p>Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet</p>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="small-5 small-offset-1">
+              <div class="section__content section__content--top no-margin">
+                <h2 class="section__heading section__heading--green">
+                  <p>Dimension</p>
+                  <p>paysage</p><span>services</span>
+                </h2>
+                <p class="section__text">Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gallery">
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-1.jpg"></a></div>
-                  <h4 class="gallery__title">Water</h4>
-                </div>
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-2.jpg"></a></div>
-                  <h4 class="gallery__title">Light</h4>
-                </div>
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-3.jpg"></a></div>
-                  <h4 class="gallery__title">Maintenance</h4>
-                </div>
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-4.jpg"></a></div>
-                  <h4 class="gallery__title">Urban Property</h4>
-                </div>
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-2.jpg"></a></div>
-                  <h4 class="gallery__title">Light</h4>
-                </div>
-                <div class="gallery__item">
-                  <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-1.jpg"></a></div>
-                  <h4 class="gallery__title">Water</h4>
-                </div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="cell">
+              <div class="gallery">
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-1.jpg"></a></div>
+                        <h4 class="gallery__title">Water</h4>
+                      </div>
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-2.jpg"></a></div>
+                        <h4 class="gallery__title">Light</h4>
+                      </div>
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-3.jpg"></a></div>
+                        <h4 class="gallery__title">Maintenance</h4>
+                      </div>
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-4.jpg"></a></div>
+                        <h4 class="gallery__title">Urban Property</h4>
+                      </div>
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-2.jpg"></a></div>
+                        <h4 class="gallery__title">Light</h4>
+                      </div>
+                      <div class="gallery__item">
+                        <div class="gallery__img"><a href="#"><img src="../img/gallery/gallery-1.jpg"></a></div>
+                        <h4 class="gallery__title">Water</h4>
+                      </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section section__realisations grid-x align-justify">
-        <div class="section__content section__content--left small-6 cell">
-          <h2 class="section__heading">
-            <p>Dimension</p>
-            <p>paysage</p><span>services</span>
-          </h2>
-          <p>Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet, eu lacinia ex finibus. Suspendisse augue est, fermentum pharetra dictum eget, gravida sed nisi.</p><a class="button button--grey" href="#"><span class="button__text">Read More</span><span class="button__arrows">
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg>
-                    <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                    </svg></span></a>
+      <section class="section section__realisations">
+        <div class="group-block">
+          <div class="wide-block">
+            <div class="grid-container full">
+              <div class="grid-x align-right">
+                <div class="small-5 small-offset-6 cell">
+                  <div class="section__img"><img src="../img/section/section__realisation.jpg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="narrow-block">
+            <div class="grid-container">
+              <div class="grid-x">
+                <div class="small-5 small-offset-1 cell">
+                  <div class="section__content">
+                    <h2 class="section__heading">
+                      <p>Dimension</p>
+                      <p>paysage</p><span>services</span>
+                    </h2>
+                    <p class="section__text">Cras at mi elit. Mauris nibh ante, elementum a faucibus a, venenatis id lacus. Curabitur pharetra arcu a dolor imperdiet, eu lacinia ex finibus. Suspendisse augue est, fermentum pharetra dictum eget, gravida sed nisi.</p><a class="button button--grey" href="#"><span class="button__text">Read More</span><span class="button__arrows">
+                              <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                              </svg>
+                              <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                              </svg></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section__img small-6 cell"><img src="../img/section/section__realisation.jpg"></div>
       </section>
       <section class="section section__news">
-        <div class="section__content section__content--full">
-          <h2 class="section__heading">
-            <p>Dimension</p>
-            <p>paysage</p><span>News</span>
-          </h2>
-          <div class="news grid-x grid-margin-x">
-                  <div class="news__item small-6 small-offset-3">
-                    <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Mauris nibh ante, elementum a faucibus a, venenatis id lacus. "><span>Mauris nibh ante, elementum a faucibus a, venenatis id lacus. </span>
-                      <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
-                      </svg></a>
-                  </div>
-                  <div class="news__item small-6 small-offset-3">
-                    <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. "><span>Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. </span>
-                      <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
-                      </svg></a>
-                  </div>
-                  <div class="news__item small-6 small-offset-3">
-                    <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus."><span>Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus.</span>
-                      <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
-                      </svg></a>
-                  </div>
-                  <div class="news__item small-6 small-offset-3">
-                    <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Sed quis libero ut nunc sollicitudin dictum."><span>Sed quis libero ut nunc sollicitudin dictum.</span>
-                      <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
-                      </svg></a>
-                  </div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="small-5 small-offset-1">
+              <div class="section__content no-margin">
+                <h2 class="section__heading">
+                  <p>Dimension</p>
+                  <p>paysage</p><span>News</span>
+                </h2>
+              </div>
+            </div>
           </div>
-          <div class="small-offset-3 button--news"><a class="button button--grey" href="#"><span class="button__text">Read All News</span><span class="button__arrows">
-                      <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                      </svg>
-                      <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
-                      </svg></span></a>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="news">
+                    <div class="news__item small-8 small-offset-2">
+                      <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Mauris nibh ante, elementum a faucibus a, venenatis id lacus. ">Mauris nibh ante, elementum a faucibus a, venenatis id lacus. 
+                        <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
+                        </svg></a>
+                    </div>
+                    <div class="news__item small-8 small-offset-2">
+                      <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. ">Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. 
+                        <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
+                        </svg></a>
+                    </div>
+                    <div class="news__item small-8 small-offset-2">
+                      <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus.">Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus.
+                        <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
+                        </svg></a>
+                    </div>
+                    <div class="news__item small-8 small-offset-2">
+                      <time class="news__date" datetime="2017-08-24">24th August, 2017</time><a class="news__link" href="#" data-value="Sed quis libero ut nunc sollicitudin dictum.">Sed quis libero ut nunc sollicitudin dictum.
+                        <svg class="news__arrow" width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.988 6.003h-20M14.993.011l6 6.003-5.994 5.997"></path>
+                        </svg></a>
+                    </div>
+            </div>
+            <div class="small-offset-3 button--news"><a class="button button--grey" href="#"><span class="button__text">Read All News</span><span class="button__arrows">
+                        <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                        </svg>
+                        <svg class="button__arrow" width="5" height="8" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path id="path0_stroke" d="M -0.530807 5.47784C -0.823437 5.771 -0.823009 6.24587 -0.529852 6.5385C -0.236696 6.83113 0.238178 6.8307 0.530807 6.53754L -0.530807 5.47784ZM 3 3.00229L 3.53081 3.53214C 3.82306 3.23935 3.82306 2.76522 3.53081 2.47243L 3 3.00229ZM 0.533923 -0.529852C 0.241294 -0.823009 -0.23358 -0.823437 -0.526737 -0.530807C -0.819894 -0.238178 -0.820321 0.236696 -0.527692 0.529852L 0.533923 -0.529852ZM 0.530807 6.53754L 3.53081 3.53214L 2.46919 2.47243L -0.530807 5.47784L 0.530807 6.53754ZM 3.53081 2.47243L 0.533923 -0.529852L -0.527692 0.529852L 2.46919 3.53214L 3.53081 2.47243Z"></path>
+                        </svg></span></a>
+            </div>
           </div>
         </div>
       </section>
-      <footer class="footer grid-x grid-margin-x"><a class="footer__logo" href="#"><img src="../img/logo.svg"></a>
-        <div class="footer__content grid-x grid-margin-x align-spaced small-11">
-          <div class="small-4 cell footer__col"><a class="footer__link" href="#">about</a><a class="footer__link" href="#">realisations</a><a class="footer__link" href="#">conception</a><a class="footer__link" href="#">services</a>
-          </div>
-          <div class="small-4 cell footer__col"><a class="footer__link" href="#">client area</a><a class="footer__link" href="#">news</a><a class="footer__link" href="#">contact</a>
-          </div>
-          <div class="small-4 cell footer__col">
-            <div class="footer__contacts">
-              <p>Route de la Goille 1</p>
-              <p>1073 Savigny</p><a href="mailto:info@dimensions-paysage.ch">info@dimensions-paysage.ch</a><a href="tel:+410217811293">+41 (0)21 781 12 93</a>
+      <footer class="footer">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="small-2"><a class="footer__logo" href="#"><img src="../img/logo.svg"></a></div>
+            <div class="small-2 small-offset-1"><a class="footer__link" href="#">about</a><a class="footer__link" href="#">realisations</a><a class="footer__link" href="#">conception</a><a class="footer__link" href="#">services</a>
             </div>
-            <div class="social"><a class="social__icon" href="#">
-                <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path d="M26,16.1838209 C25.5590773,16.3846154 25.0843458,16.5204045 24.5863708,16.5810762 C25.0949111,16.2690502 25.4851206,15.7742867 25.6689558,15.1849043 C25.1928156,15.4738173 24.6666667,15.6840014 24.1045959,15.7966775 C23.6566297,15.3062477 23.0163761,15 22.3078007,15 C20.9491108,15 19.846804,16.130372 19.846804,17.524377 C19.846804,17.7222824 19.8679345,17.9144095 19.9101955,18.0993138 C17.8640606,17.9938606 16.050361,16.989888 14.8353583,15.4608162 C14.6233492,15.8349585 14.5022011,16.2690502 14.5022011,16.7313109 C14.5022011,17.6067172 14.9367846,18.3795594 15.5974643,18.8324305 C15.1945765,18.8201517 14.8142279,18.7053088 14.481775,18.5175153 L14.481775,18.5485735 C14.481775,19.7721199 15.3305159,20.7927049 16.4574749,21.0238353 C16.2511005,21.0830625 16.0334566,21.1126761 15.8087691,21.1126761 C15.6502905,21.1126761 15.4953337,21.0975081 15.3453073,21.0678945 C15.6587427,22.0704225 16.5673534,22.8006501 17.6450079,22.8201517 C16.8026061,23.4976526 15.7404473,23.9014085 14.5874274,23.9014085 C14.3888008,23.9014085 14.1922874,23.8898519 14,23.8667389 C15.0896285,24.5817985 16.3842226,25 17.7739039,25 C22.3028702,25 24.7786582,21.1538462 24.7786582,17.8176237 C24.7786582,17.7078368 24.7765452,17.5980498 24.7723191,17.4904298 C25.2533897,17.1343445 25.6710689,16.6901408 26,16.1838209"></path>
-                </svg></a><a class="social__icon" href="#">
-                <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path d="M26.2389937,19.1836184 L26.2389937,17.4194419 L24.9811321,17.4194419 L24.9811321,19.1836184 L23.1698113,19.1836184 L23.1698113,20.4437444 L24.9811321,20.4437444 L24.9811321,22.2583258 L26.2389937,22.2583258 L26.2389937,20.4437444 L28,20.4437444 L28,19.1836184 L26.2389937,19.1836184 L26.2389937,19.1836184 Z M17.081761,19.0828083 L17.081761,21.0990099 C17.081761,21.0990099 19.0341635,21.0963888 19.8291321,21.0963888 C19.3986415,22.4034419 18.7292579,23.1152115 17.081761,23.1152115 C15.4144906,23.1152115 14.1132075,21.7611809 14.1132075,20.0909091 C14.1132075,18.4206373 15.4144906,17.0666067 17.081761,17.0666067 C17.9632704,17.0666067 18.5325786,17.3770009 19.0547925,17.8096274 C19.472805,17.3908623 19.4378868,17.3311827 20.5013836,16.3250477 C19.5985912,15.5018326 18.3986918,15 17.081761,15 C14.2751698,15 12,17.2792655 12,20.0909091 C12,22.9025023 14.2751698,25.1818182 17.081761,25.1818182 C21.2768302,25.1818182 22.3021887,21.5224122 21.9622642,19.0828083 L17.081761,19.0828083 L17.081761,19.0828083 Z"></path>
-                </svg></a><a class="social__icon" href="#">
-                <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path d="M20.0000139,13 C21.9010859,13 22.1394666,13.0080581 22.886091,13.0421244 C23.6311594,13.0761073 24.1400144,13.1944502 24.585266,13.3675048 C25.0455779,13.5463668 25.435951,13.7857201 25.8251294,14.1748706 C26.2142799,14.564049 26.4536332,14.9544221 26.632523,15.414734 C26.8055498,15.8599856 26.9238927,16.3688406 26.9578756,17.113909 C26.9919419,17.8605334 27,18.0989141 27,20.0000139 C27,21.9010859 26.9919419,22.1394666 26.9578756,22.886091 C26.9238927,23.6311594 26.8055498,24.1400144 26.632523,24.585266 C26.4536332,25.0455779 26.2142799,25.435951 25.8251294,25.8251294 C25.435951,26.2142799 25.0455779,26.4536332 24.585266,26.632523 C24.1400144,26.8055498 23.6311594,26.9238927 22.886091,26.9578756 C22.1394666,26.9919419 21.9010859,27 20.0000139,27 C18.0989141,27 17.8605334,26.9919419 17.113909,26.9578756 C16.3688406,26.9238927 15.8599856,26.8055498 15.414734,26.632523 C14.9544221,26.4536332 14.564049,26.2142799 14.1748706,25.8251294 C13.7857201,25.435951 13.5463668,25.0455779 13.3675048,24.585266 C13.1944502,24.1400144 13.0761073,23.6311594 13.0421244,22.886091 C13.0080581,22.1394666 13,21.9010859 13,20.0000139 C13,18.0989141 13.0080581,17.8605334 13.0421244,17.113909 C13.0761073,16.3688406 13.1944502,15.8599856 13.3675048,15.414734 C13.5463668,14.9544221 13.7857201,14.564049 14.1748706,14.1748706 C14.564049,13.7857201 14.9544221,13.5463668 15.414734,13.3675048 C15.8599856,13.1944502 16.3688406,13.0761073 17.113909,13.0421244 C17.8605334,13.0080581 18.0989141,13 20.0000139,13 Z M20.0000139,14.261259 C18.1309242,14.261259 17.9095211,14.2684002 17.1713993,14.3020774 C16.4889062,14.3331984 16.1182615,14.4472343 15.8716004,14.5430979 C15.5448584,14.6700824 15.3116737,14.8217692 15.0667353,15.0667353 C14.8217692,15.3116737 14.6700824,15.5448584 14.5430979,15.8716004 C14.4472343,16.1182615 14.3331984,16.4889062 14.3020774,17.1713993 C14.2684002,17.9095211 14.261259,18.1309242 14.261259,20.0000139 C14.261259,21.8690758 14.2684002,22.0904789 14.3020774,22.8286007 C14.3331984,23.5110938 14.4472343,23.8817385 14.5430979,24.1283996 C14.6700824,24.4551416 14.821797,24.6883263 15.0667353,24.9332647 C15.3116737,25.1782308 15.5448584,25.3299176 15.8716004,25.4569021 C16.1182615,25.5527657 16.4889062,25.6668016 17.1713993,25.6979226 C17.9094377,25.7315998 18.1307853,25.738741 20.0000139,25.738741 C21.8692147,25.738741 22.0905901,25.7315998 22.8286007,25.6979226 C23.5110938,25.6668016 23.8817385,25.5527657 24.1283996,25.4569021 C24.4551416,25.3299176 24.6883263,25.1782308 24.9332647,24.9332647 C25.1782308,24.6883263 25.3299176,24.4551416 25.4569021,24.1283996 C25.5527657,23.8817385 25.6668016,23.5110938 25.6979226,22.8286007 C25.7315998,22.0904789 25.738741,21.8690758 25.738741,20.0000139 C25.738741,18.1309242 25.7315998,17.9095211 25.6979226,17.1713993 C25.6668016,16.4889062 25.5527657,16.1182615 25.4569021,15.8716004 C25.3299176,15.5448584 25.1782308,15.3116737 24.9332647,15.0667353 C24.6883263,14.8217692 24.4551416,14.6700824 24.1283996,14.5430979 C23.8817385,14.4472343 23.5110938,14.3331984 22.8286007,14.3020774 C22.0904789,14.2684002 21.8690758,14.261259 20.0000139,14.261259 Z M20.0000139,16.4054077 C21.9852513,16.4054077 23.5945923,18.0147487 23.5945923,20.0000139 C23.5945923,21.9852513 21.9852513,23.5945923 20.0000139,23.5945923 C18.0147487,23.5945923 16.4054077,21.9852513 16.4054077,20.0000139 C16.4054077,18.0147487 18.0147487,16.4054077 20.0000139,16.4054077 Z M20.0000139,22.3333333 C21.2886704,22.3333333 22.3333333,21.2886704 22.3333333,20.0000139 C22.3333333,18.7113296 21.2886704,17.6666667 20.0000139,17.6666667 C18.7113296,17.6666667 17.6666667,18.7113296 17.6666667,20.0000139 C17.6666667,21.2886704 18.7113296,22.3333333 20.0000139,22.3333333 Z M24.5766244,16.2633906 C24.5766244,16.7273148 24.2005335,17.1033779 23.7366094,17.1033779 C23.272713,17.1033779 22.8966221,16.7273148 22.8966221,16.2633906 C22.8966221,15.7994665 23.272713,15.4233756 23.7366094,15.4233756 C24.2005335,15.4233756 24.5766244,15.7994665 24.5766244,16.2633906 Z"></path>
-                </svg></a></div>
+            <div class="small-2 small-offset-1"><a class="footer__link" href="#">client area</a><a class="footer__link" href="#">news</a><a class="footer__link" href="#">contact</a>
+            </div>
+            <div class="small-3 small-offset-1">
+              <div class="footer__contacts">
+                <p>Route de la Goille 1</p>
+                <p>1073 Savigny</p><a href="mailto:info@dimensions-paysage.ch">info@dimensions-paysage.ch</a><a href="tel:+410217811293">+41 (0)21 781 12 93</a>
+              </div>
+              <div class="social"><a class="social__icon" href="#">
+                  <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M26,16.1838209 C25.5590773,16.3846154 25.0843458,16.5204045 24.5863708,16.5810762 C25.0949111,16.2690502 25.4851206,15.7742867 25.6689558,15.1849043 C25.1928156,15.4738173 24.6666667,15.6840014 24.1045959,15.7966775 C23.6566297,15.3062477 23.0163761,15 22.3078007,15 C20.9491108,15 19.846804,16.130372 19.846804,17.524377 C19.846804,17.7222824 19.8679345,17.9144095 19.9101955,18.0993138 C17.8640606,17.9938606 16.050361,16.989888 14.8353583,15.4608162 C14.6233492,15.8349585 14.5022011,16.2690502 14.5022011,16.7313109 C14.5022011,17.6067172 14.9367846,18.3795594 15.5974643,18.8324305 C15.1945765,18.8201517 14.8142279,18.7053088 14.481775,18.5175153 L14.481775,18.5485735 C14.481775,19.7721199 15.3305159,20.7927049 16.4574749,21.0238353 C16.2511005,21.0830625 16.0334566,21.1126761 15.8087691,21.1126761 C15.6502905,21.1126761 15.4953337,21.0975081 15.3453073,21.0678945 C15.6587427,22.0704225 16.5673534,22.8006501 17.6450079,22.8201517 C16.8026061,23.4976526 15.7404473,23.9014085 14.5874274,23.9014085 C14.3888008,23.9014085 14.1922874,23.8898519 14,23.8667389 C15.0896285,24.5817985 16.3842226,25 17.7739039,25 C22.3028702,25 24.7786582,21.1538462 24.7786582,17.8176237 C24.7786582,17.7078368 24.7765452,17.5980498 24.7723191,17.4904298 C25.2533897,17.1343445 25.6710689,16.6901408 26,16.1838209"></path>
+                  </svg></a><a class="social__icon" href="#">
+                  <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M26.2389937,19.1836184 L26.2389937,17.4194419 L24.9811321,17.4194419 L24.9811321,19.1836184 L23.1698113,19.1836184 L23.1698113,20.4437444 L24.9811321,20.4437444 L24.9811321,22.2583258 L26.2389937,22.2583258 L26.2389937,20.4437444 L28,20.4437444 L28,19.1836184 L26.2389937,19.1836184 L26.2389937,19.1836184 Z M17.081761,19.0828083 L17.081761,21.0990099 C17.081761,21.0990099 19.0341635,21.0963888 19.8291321,21.0963888 C19.3986415,22.4034419 18.7292579,23.1152115 17.081761,23.1152115 C15.4144906,23.1152115 14.1132075,21.7611809 14.1132075,20.0909091 C14.1132075,18.4206373 15.4144906,17.0666067 17.081761,17.0666067 C17.9632704,17.0666067 18.5325786,17.3770009 19.0547925,17.8096274 C19.472805,17.3908623 19.4378868,17.3311827 20.5013836,16.3250477 C19.5985912,15.5018326 18.3986918,15 17.081761,15 C14.2751698,15 12,17.2792655 12,20.0909091 C12,22.9025023 14.2751698,25.1818182 17.081761,25.1818182 C21.2768302,25.1818182 22.3021887,21.5224122 21.9622642,19.0828083 L17.081761,19.0828083 L17.081761,19.0828083 Z"></path>
+                  </svg></a><a class="social__icon" href="#">
+                  <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M20.0000139,13 C21.9010859,13 22.1394666,13.0080581 22.886091,13.0421244 C23.6311594,13.0761073 24.1400144,13.1944502 24.585266,13.3675048 C25.0455779,13.5463668 25.435951,13.7857201 25.8251294,14.1748706 C26.2142799,14.564049 26.4536332,14.9544221 26.632523,15.414734 C26.8055498,15.8599856 26.9238927,16.3688406 26.9578756,17.113909 C26.9919419,17.8605334 27,18.0989141 27,20.0000139 C27,21.9010859 26.9919419,22.1394666 26.9578756,22.886091 C26.9238927,23.6311594 26.8055498,24.1400144 26.632523,24.585266 C26.4536332,25.0455779 26.2142799,25.435951 25.8251294,25.8251294 C25.435951,26.2142799 25.0455779,26.4536332 24.585266,26.632523 C24.1400144,26.8055498 23.6311594,26.9238927 22.886091,26.9578756 C22.1394666,26.9919419 21.9010859,27 20.0000139,27 C18.0989141,27 17.8605334,26.9919419 17.113909,26.9578756 C16.3688406,26.9238927 15.8599856,26.8055498 15.414734,26.632523 C14.9544221,26.4536332 14.564049,26.2142799 14.1748706,25.8251294 C13.7857201,25.435951 13.5463668,25.0455779 13.3675048,24.585266 C13.1944502,24.1400144 13.0761073,23.6311594 13.0421244,22.886091 C13.0080581,22.1394666 13,21.9010859 13,20.0000139 C13,18.0989141 13.0080581,17.8605334 13.0421244,17.113909 C13.0761073,16.3688406 13.1944502,15.8599856 13.3675048,15.414734 C13.5463668,14.9544221 13.7857201,14.564049 14.1748706,14.1748706 C14.564049,13.7857201 14.9544221,13.5463668 15.414734,13.3675048 C15.8599856,13.1944502 16.3688406,13.0761073 17.113909,13.0421244 C17.8605334,13.0080581 18.0989141,13 20.0000139,13 Z M20.0000139,14.261259 C18.1309242,14.261259 17.9095211,14.2684002 17.1713993,14.3020774 C16.4889062,14.3331984 16.1182615,14.4472343 15.8716004,14.5430979 C15.5448584,14.6700824 15.3116737,14.8217692 15.0667353,15.0667353 C14.8217692,15.3116737 14.6700824,15.5448584 14.5430979,15.8716004 C14.4472343,16.1182615 14.3331984,16.4889062 14.3020774,17.1713993 C14.2684002,17.9095211 14.261259,18.1309242 14.261259,20.0000139 C14.261259,21.8690758 14.2684002,22.0904789 14.3020774,22.8286007 C14.3331984,23.5110938 14.4472343,23.8817385 14.5430979,24.1283996 C14.6700824,24.4551416 14.821797,24.6883263 15.0667353,24.9332647 C15.3116737,25.1782308 15.5448584,25.3299176 15.8716004,25.4569021 C16.1182615,25.5527657 16.4889062,25.6668016 17.1713993,25.6979226 C17.9094377,25.7315998 18.1307853,25.738741 20.0000139,25.738741 C21.8692147,25.738741 22.0905901,25.7315998 22.8286007,25.6979226 C23.5110938,25.6668016 23.8817385,25.5527657 24.1283996,25.4569021 C24.4551416,25.3299176 24.6883263,25.1782308 24.9332647,24.9332647 C25.1782308,24.6883263 25.3299176,24.4551416 25.4569021,24.1283996 C25.5527657,23.8817385 25.6668016,23.5110938 25.6979226,22.8286007 C25.7315998,22.0904789 25.738741,21.8690758 25.738741,20.0000139 C25.738741,18.1309242 25.7315998,17.9095211 25.6979226,17.1713993 C25.6668016,16.4889062 25.5527657,16.1182615 25.4569021,15.8716004 C25.3299176,15.5448584 25.1782308,15.3116737 24.9332647,15.0667353 C24.6883263,14.8217692 24.4551416,14.6700824 24.1283996,14.5430979 C23.8817385,14.4472343 23.5110938,14.3331984 22.8286007,14.3020774 C22.0904789,14.2684002 21.8690758,14.261259 20.0000139,14.261259 Z M20.0000139,16.4054077 C21.9852513,16.4054077 23.5945923,18.0147487 23.5945923,20.0000139 C23.5945923,21.9852513 21.9852513,23.5945923 20.0000139,23.5945923 C18.0147487,23.5945923 16.4054077,21.9852513 16.4054077,20.0000139 C16.4054077,18.0147487 18.0147487,16.4054077 20.0000139,16.4054077 Z M20.0000139,22.3333333 C21.2886704,22.3333333 22.3333333,21.2886704 22.3333333,20.0000139 C22.3333333,18.7113296 21.2886704,17.6666667 20.0000139,17.6666667 C18.7113296,17.6666667 17.6666667,18.7113296 17.6666667,20.0000139 C17.6666667,21.2886704 18.7113296,22.3333333 20.0000139,22.3333333 Z M24.5766244,16.2633906 C24.5766244,16.7273148 24.2005335,17.1033779 23.7366094,17.1033779 C23.272713,17.1033779 22.8966221,16.7273148 22.8966221,16.2633906 C22.8966221,15.7994665 23.272713,15.4233756 23.7366094,15.4233756 C24.2005335,15.4233756 24.5766244,15.7994665 24.5766244,16.2633906 Z"></path>
+                  </svg></a></div>
+            </div>
           </div>
         </div>
-        <div class="footer__bottom-line grid-x align-justify align-middle">
-          <p>&copy; 2017 Dimensions Paysage SA. All Rights Reserved. Credits</p><a class="scroll-button anchor" href="#header">
-            <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <polyline id="Path-3" transform="translate(25.250000, 25.497663) rotate(-90.000000) translate(-25.250000, -25.497663) " points="23 29.9953266 27.5 25.4953266 23.0046734 21"></polyline>
-            </svg></a>
+        <div class="footer__bottom-line">
+          <div class="gird-container">
+            <div class="grid-x align-justify">
+              <p>&copy; 2017 Dimensions Paysage SA. All Rights Reserved. Credits</p><a class="scroll-button anchor" href="#scroll-top">
+                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-3" transform="translate(25.250000, 25.497663) rotate(-90.000000) translate(-25.250000, -25.497663) " points="23 29.9953266 27.5 25.4953266 23.0046734 21"></polyline>
+                </svg></a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

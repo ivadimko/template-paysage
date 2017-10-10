@@ -1,15 +1,20 @@
 include ../layouts/mixins.pug
 
 section.section.section__news
-    .section__content.section__content--full
-        h2.section__heading
-            p Dimension
-            p paysage
-            span News
-        .news.grid-x.grid-margin-x
-            +news__item ('2017-08-24', '24th August, 2017', 'Mauris nibh ante, elementum a faucibus a, venenatis id lacus. ')
-            +news__item ('2017-08-24', '24th August, 2017', 'Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. ')
-            +news__item ('2017-08-24', '24th August, 2017', 'Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus.')
-            +news__item ('2017-08-24', '24th August, 2017', 'Sed quis libero ut nunc sollicitudin dictum.')
-        .small-offset-3.button--news
-            +button('Read All News', 'button--grey')
+    .grid-container
+        .grid-x
+            .small-5.small-offset-1
+                .section__content.no-margin
+                    h2.section__heading
+                        p Dimension
+                        p paysage
+                        span News
+    .grid-container
+        .grid-x
+            .news
+                +news__item ('2017-08-24', '24th August, 2017', 'Mauris nibh ante, elementum a faucibus a, venenatis id lacus. ')
+                +news__item ('2017-08-24', '24th August, 2017', 'Aliquam mauris quam, maximus ac lectus eget, sodales maximus lorem. ')
+                +news__item ('2017-08-24', '24th August, 2017', 'Curabitur et dui tincidunt, eleifend mauris id, ullamcorper purus.')
+                +news__item ('2017-08-24', '24th August, 2017', 'Sed quis libero ut nunc sollicitudin dictum.')
+            .small-offset-3.button--news
+                +button('Read All News', 'button--grey')
